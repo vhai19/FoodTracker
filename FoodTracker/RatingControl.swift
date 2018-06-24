@@ -17,12 +17,12 @@ import UIKit
             updateButtonSelectionStates()
         }
     }
-    @IBInspectable var startSize: CGSize = CGSize(width: 44.0, height: 44.0) {
+    var startSize: CGSize = CGSize(width: 44.0, height: 44.0) {
         didSet {
             setupButtons()
         }
     }
-    @IBInspectable var startCount: Int = 5 {
+    var startCount: Int = 5 {
         didSet {
             setupButtons()
         }
