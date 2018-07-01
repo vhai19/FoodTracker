@@ -11,26 +11,34 @@ import XCTest
 
 class FoodTrackerTests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    // Confirm that the Meal initializer returns a Meal object when passed valid parameters.
+    func testMealInitializationSucceeds() {
+        
+        // Zero rating
+        let zeroRatingMeal = Meal.init(name: "Zero Rating", photo: nil, rating: 0)
+        XCTAssertNotNil(zeroRatingMeal)
+        
+        // Highest positive rating
+        let highestPositiveRating = Meal.init(name: "Highest Positive Rating", photo: nil, rating: 5)
+        XCTAssertNotNil(highestPositiveRating)
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    // Confirm that the Meal initialier returns nil when passed a negative rating or an empty name.
+    func testMealInitializationFails() {
+        
+        // Negative rating
+        let negativeRating = Meal.init(name: "Negative Rating", photo: nil, rating: -1)
+        XCTAssertNil(negativeRating)
+        
+        // Empty name
+        let emptyStringMeal = Meal.init(name: "", photo: nil, rating: 0)
+        XCTAssertNil(emptyStringMeal)
+        
+        // Rating exceeds maximum
+        let largeRating = Meal.init(name: "Maximum Rating", photo: nil, rating: 6)
+        XCTAssertNil(largeRating)
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
+    // Meal Test Class
 }

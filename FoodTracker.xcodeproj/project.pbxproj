@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B221200220E9120E008125DF /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221200120E9120E008125DF /* Meal.swift */; };
 		B2E246F220DF7FD300C0EE63 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E246F120DF7FD300C0EE63 /* MealTableViewCell.swift */; };
 		B2F3978D203F0040007C6538 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F3978C203F0040007C6538 /* RatingControl.swift */; };
 		B2F78C75203161CB001F17A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F78C74203161CB001F17A7 /* AppDelegate.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B221200120E9120E008125DF /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		B2E246F120DF7FD300C0EE63 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 		B2F3978C203F0040007C6538 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		B2F78C71203161CB001F17A7 /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +87,7 @@
 				B2F78C76203161CB001F17A7 /* ViewController.swift */,
 				B2F3978C203F0040007C6538 /* RatingControl.swift */,
 				B2F78C78203161CB001F17A7 /* Main.storyboard */,
+				B221200120E9120E008125DF /* Meal.swift */,
 				B2E246F120DF7FD300C0EE63 /* MealTableViewCell.swift */,
 				B2F78C7B203161CB001F17A7 /* Assets.xcassets */,
 				B2F78C7D203161CB001F17A7 /* LaunchScreen.storyboard */,
@@ -205,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B221200220E9120E008125DF /* Meal.swift in Sources */,
 				B2E246F220DF7FD300C0EE63 /* MealTableViewCell.swift in Sources */,
 				B2F78C77203161CB001F17A7 /* ViewController.swift in Sources */,
 				B2F3978D203F0040007C6538 /* RatingControl.swift in Sources */,
